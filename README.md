@@ -1,18 +1,20 @@
 # interfaceff2gro
 
+SCRIPT CLEAN UP AND EASY TO UNDERSTAND EACH STEP.
+
 interfaceff2gro is a Python script that creates input files for GROMACS using Hendrik Heinz research group Interface forcefield (doi:10.1021/la3038846, [Interface_ff](https://bionanostructures.com/interface-md/)) - so far it only works with CHARMM forcefield (for supported atomtypes please see prm file that is included [here](https://github.com/kolmank/interfaceff2gro/tree/master/forcefield)). It uses msi2lmp utility from [Lammps](https://github.com/lammps/lammps) software package to transform mdf and car files (Materials Studio files) to Lammps data file and [MDAnalysis](https://www.mdanalysis.org/) Python library. interfacesff2gro creates 3 files: a gro file having coordinates information of your structure, an itp file having topology information and system.top file being a master topology file. 
 
 ## Getting Started
 
-The script was written in Python 2.7 but it should also work with Python 3.6 (I have only tested it on Linux). The easiest way to build Python environment is by using [Conda](https://conda.io/docs/). The source file of msi2lmp are included in [msi2lmp folder](https://github.com/kolmank/interfaceff2gro/tree/master/msi2lmp) so you do not need to download them.
+The script works with Python 3.6. The easiest way to build Python environment is by using [Conda](https://conda.io/docs/). The source file of msi2lmp are included in [msi2lmp folder](https://github.com/kolmank/interfaceff2gro/tree/master/msi2lmp) so you do not need to download them.
 
 ### Prerequisites
 
-Create Python 2.7 environment and install MDAnalysis. The easiest way is to use Conda.
+Create Python 3.6 environment and install MDAnalysis. The easiest way is to use Conda.
 
 ```
 conda config --add channels conda-forge
-conda create -n envname python=2.7 mdanalysis
+conda create -n envname python=3.6 mdanalysis
 source activate envname
 ```
 
@@ -21,7 +23,8 @@ source activate envname
 Download the files to you computer:
 
 ```
-git clone https://github.com/kolmank/interfaceff2gro.git
+git clone https://github.com/ananvodo/interfaceff2gro.git
+
 ```
 
 Enter msi2lmp directory and compile it. According to the authors of the code, the files have been prepared to be compiled using gcc so check if gcc is your default compiler. If you plan to use different compiler, you have to modify the files to make it work. Frc file having atomtypes, bondtypes and angletypes of Interface forcfield has been added to frc_files directory. To compile please use the commands below:
