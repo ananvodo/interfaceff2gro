@@ -7,6 +7,7 @@ interfaceff2gro is a Python script that creates input files for GROMACS using He
 ## Getting Started
 
 The script works with Python 3.6. The easiest way to build Python environment is by using [Conda](https://conda.io/docs/). The source file of msi2lmp are included in [msi2lmp folder](https://github.com/kolmank/interfaceff2gro/tree/master/msi2lmp) so you do not need to download them.
+PLEASE be aware that the python script call msi2lmp.exe without the -ignore flag. If your molecule has missing parameters the python code will fail.
 
 ### Prerequisites
 
