@@ -366,7 +366,7 @@ for each_atom in atomtypes_lmps:
     atom_mass = each_atom[1]
     atom_charge = 0
     particle_type = "A"
-    atom_sigma = atom_prm_Rmin_div_2[atom_name] * (2 / convert_dist)  # [nm]
+    atom_sigma = atom_prm_Rmin_div_2[atom_name] * (2 / convert_dist) (2 / convert_dist) / (2**(1/6)) # [nm]  Dividing by 2^(1/6) because of difference in CHARMM and GMX LJ formula
     atom_epsilion = -(kcal2kJ * atom_prm_epsilion[atom_name]) # [kJ/mol]   Epsilion is positive in gmx format
     
     if atom_mass > 10:
