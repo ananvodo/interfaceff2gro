@@ -54,7 +54,7 @@ To use the script, copy car and mdf files to the main directory of the script (y
 
 As a result, you should get three files: nameofyourcarfile.gro, nameofyourcarfile.itp and system.top. Examples can be found [here](https://github.com/kolmank/interfaceff2gro/tree/master/examples).
 
-PLEASE be aware that the python script calls msi2lmp.exe without the -ignore flag. If your molecule has missing parameters the python code will fail. If being aware you have missing paramerters and still wish to continue please add -ignore to the line 167 of the python code.
+PLEASE be aware that the python script calls msi2lmp.exe without the -ignore flag. If your molecule has missing parameters the python code will fail. If being aware you have missing paramerters and still wish to continue please add -ignore to the very end of the line 167 of the python code.
 
 ## Known limitations
 
