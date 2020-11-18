@@ -1,6 +1,7 @@
 # interfaceff2gro
 
-SCRIPT CLEAN UP AND EASY TO UNDERSTAND EACH STEP. VERY IMPORTANT: CORRECTED PCFF_INTERFACE.FRC FILE AND SIGMA(CHARMM) TO SIGMA(GMX) CONVERSION.
+SCRIPT CLEAN UP AND EASY TO UNDERSTAND EACH STEP. 
+VERY IMPORTANT: CORRECTED PCFF_INTERFACE.FRC FILE AND SIGMA(CHARMM) TO SIGMA(GMX) CONVERSION.
 
 interfaceff2gro is a Python script that creates input files for GROMACS using Hendrik Heinz research group Interface forcefield (doi:10.1021/la3038846, [Interface_ff](https://bionanostructures.com/interface-md/)) - so far it only works with CHARMM forcefield (for supported atomtypes please see prm file that is included [here](https://github.com/kolmank/interfaceff2gro/tree/master/forcefield)). 
 
