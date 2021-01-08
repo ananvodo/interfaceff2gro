@@ -1,5 +1,11 @@
 # interfaceff2gro
 
+
+@Author: Andres Vodopivec
+
+@Date: 2020-12-08
+
+
 SCRIPT CLEAN UP AND EASY TO UNDERSTAND EACH STEP. 
 
 VERY IMPORTANT: CORRECTED PCFF_INTERFACE.FRC FILE AND SIGMA(CHARMM) TO SIGMA(GMX) CONVERSION.
@@ -72,3 +78,5 @@ PLEASE be aware that the python script calls msi2lmp.exe without the -ignore fla
 * Hendrik Heinz research group  that created Interface forcefield (doi:10.1021/la3038846, [Interface_ff](https://bionanostructures.com/interface-md/)).
 * [Lammps](https://github.com/lammps/lammps) software package - msi2lmp used in this project is part of it.
 * [MDAnalysis](https://www.mdanalysis.org/) Python library.
+
+#### Please feel free to use this program. If you find anything useful in this program or decide to use it for your research, please fork it, click on the star, and add it in your references or citations.
